@@ -107,20 +107,25 @@ class Splittable {
   }) {
     Size size = MediaQuery.of(context).size;
     final screenWidth = size.width;
-    assert(splitOn != null || splitEveryN != null || splitAtIndices != null || splitAtIndicesByWidth!=null,
+    assert(
+        splitOn != null ||
+            splitEveryN != null ||
+            splitAtIndices != null ||
+            splitAtIndicesByWidth != null,
         'Must supply either splitOn<T>, splitEveryN or splitAtIndices');
     assert(splitAtIndices == null || splitAtIndicesByWidth == null,
         'Cannot supply both splitAtIndices and splitAtIndicesByWidth');
     bool splitting = forceSplit ?? willSplitRows(context);
 
-    if(splitAtIndicesByWidth!=null) {
+    if (splitAtIndicesByWidth != null) {
       // They have supplied a map of min screen widths to widget split indices
-      splitting = false;  // default to not split unless we find an entry that is >= screenWidth
-      final keyWidths =  splitAtIndicesByWidth.keys.toList();
+      splitting =
+          false; // default to not split unless we find an entry that is >= screenWidth
+      final keyWidths = splitAtIndicesByWidth.keys.toList();
       keyWidths.sort();
-      for(int i=0;i<keyWidths.length;i++) {
-        if( screenWidth <= keyWidths[i] ) {
-          // we use the first one that the screenWidth is <= to 
+      for (int i = 0; i < keyWidths.length; i++) {
+        if (screenWidth <= keyWidths[i]) {
+          // we use the first one that the screenWidth is <= to
           splitAtIndices = splitAtIndicesByWidth[keyWidths[i]];
           splitting = true;
           break;
