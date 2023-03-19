@@ -28,8 +28,10 @@ Include the dependency in pubspec.yaml, add the import, and replace your `Row()`
 Add depends to `pubspec.yaml`
 
 ```yaml
-  splittablle_flexible_row
+  splittable_flexible_row
 ```
+
+and add import to the dart file where it will be used:
 
 ```dart
 import 'package:splittable_flexible_row/splittable_flexible_row.dart';
