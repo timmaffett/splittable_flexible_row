@@ -4,7 +4,9 @@
 
 This package allows the definition of Row() widgets with additional information on how they can be split into multiple rows when the screen width does not allow the full row to be displayed.  This allows for the easy defintition of screen size flexible flutter layouts using Row's.
 
-A live example of the package in use can be found  [here](https://timmaffett.github.io/material_symbols_icons).
+## Check out the [Live Example](https://timmaffett.github.io/msi_device_preview)
+
+A live example of the package in use can be found  [here](https://timmaffett.github.io/msi_device_preview).  This example 'wraps' the app with the great [device preview](https://pub.dev/packages/device_preview) package in use so you can easily experiment with layouts on various screen sizes from different devices.
 
 I created this package because I often created layouts using Column/Row for the web or desktop platforms, only to encounter the dreaded caution overflow boxes when testing the layouts on mobile, or when resizing the windows down to smaller widths.
 This package allows for the direct replacement of `Row()` widgets with `...Splittable.flexibleRow()` calls.
