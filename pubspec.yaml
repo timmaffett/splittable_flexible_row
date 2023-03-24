@@ -1,6 +1,6 @@
 name: splittable_flexible_row
 description: Simple package to ease the creation of flexible flutter layouts using Row() widgets which can dynamically split into multiple rows based on the device's screen width.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/timmaffett/splittable_flexible_row
 
 environment:

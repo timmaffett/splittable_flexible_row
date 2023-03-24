@@ -19,7 +19,7 @@ split at specific indices [splitAtIndices], or the most versitile [splitAtIndice
 
 ## Features
 
-Easy and support simple drop in replacment for using Row() with very little other required code changes to accomplish a flexible layout.
+Easily supports simple drop in replacment for the Row() widget with very little other required code changes to accomplish a flexible layout.
 
 ## Getting started
 
